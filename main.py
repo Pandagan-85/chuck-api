@@ -15,7 +15,7 @@ sia = SentimentIntensityAnalyzer()
 # Permettiamo le richieste dal frontend Next.js
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://chuck-front.vercel.app/"],  # Qui puoi mettere l'URL di Next.js in produzione
+    allow_origins=["*"],  # Qui puoi mettere l'URL di Next.js in produzione
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
